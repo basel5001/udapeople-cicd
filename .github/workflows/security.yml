@@ -1,0 +1,17 @@
+name: Security Scans
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  secret-scan:
+    uses: basel5001/githubinfra/.github/workflows/secret-scan.yml@main
+    with:
+      scanner: gitleaks
+  ioc-scan:
+    uses: basel5001/githubinfra/.github/workflows/ioc-scan.yml@main
+    with:
+      language: node
+      scan-dependency: true
+      scan-sast: true

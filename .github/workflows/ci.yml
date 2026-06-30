@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  ci:
+    uses: basel5001/githubinfra/.github/workflows/ci.yml@main
+    with:
+      language: node
+      run-lint: true
+      run-test: true

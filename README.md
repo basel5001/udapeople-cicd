@@ -1,3 +1,5 @@
+![Security](https://github.com/basel5001/udapeople-cicd/actions/workflows/security.yml/badge.svg)
+![CI](https://github.com/basel5001/udapeople-cicd/actions/workflows/ci.yml/badge.svg)
 
 ## Give your Application Auto-Deploy Superpowers
  

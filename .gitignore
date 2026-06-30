@@ -68,3 +68,7 @@ node_modules
 
 .env
 dist
+
+# Private keys
+*.pem
+*.key
